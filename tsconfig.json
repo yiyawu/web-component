@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "es2017",
+      "es2018",
+      "es2019",
+      "es2020"
+    ],
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "declaration": false,
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "types/*"
+      ],
+      "src/*": [
+        "src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*",
+  ],
+}

@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+*.log
+*.yarn
+/src
+/html
+/example
+.eslintrc.js
+/server
+/experiment
+/doc
+/config
+/tsconfig.json
+README.md
+App.tsx
+test.js
+/environment
+
+.babelrc
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+package-dev.json
+package-prod.json
+package-lock.json
+
+index.html
+test.js
+test.ts
+index copy.html
+
+.vscode

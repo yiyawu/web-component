@@ -1,6 +1,6 @@
 import path from 'path'
 
-const basePath = path.normalize(__dirname + `${path.sep}..${path.sep}..`)
+const basePath = path.normalize(__dirname + `${path.sep}..`)
 
 export enum ENV {
   DEVELOPMENT = 'development',

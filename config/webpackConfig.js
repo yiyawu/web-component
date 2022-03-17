@@ -14,7 +14,7 @@ function getWebpackConfig(){
     return {
         mode: isDev? 'development': 'production',
         devtool: 'source-map',
-        entry: path.join(paths.basePath, '/example/index.tsx'),
+        entry: path.join(paths.basePath, '/src/index.tsx'),
         output: {
             path: isDev? path.join(paths.basePath,'test'): paths.buildPath,
             filename: `components${isDev? '':'.'+Date.now()}.js`
@@ -75,9 +75,7 @@ function getWebpackConfig(){
                             '@babel/preset-typescript'
                           ],
                         }
-                      },
-                      'eslint-loader'
-                    ]
+                      }]
                 },
                 { // 配置 html 中的图片
                     test: /\.html?$/,

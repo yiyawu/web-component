@@ -88,7 +88,7 @@ function startServer(host: string, port: number) {
 
   compiler.hooks.done.tap('done', stats => {
     if (errorDispose(stats) === STATUS.SUCCESS){
-      console.log(chalk.green('编译通过!!!', `请访问:http://${host}:${port}`))
+      console.log(chalk.green('编译通过!!!', `请访问:http://localhost:${port}`))
     }
   })
 

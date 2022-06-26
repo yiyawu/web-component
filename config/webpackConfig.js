@@ -3,6 +3,7 @@ import path from 'path'
 import htmlWebpackPlugin from 'html-webpack-plugin'
 import TerserPlugin from 'terser-webpack-plugin'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import htmlWebpackPlugin from 'html-webpack-plugin'
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
@@ -30,6 +31,7 @@ function getWebpackConfig(){
                     use: [
                         'style-loader',
                         'css-loader',
+                        'postcss-loader',
                         'less-loader'
                     ]
                 },
@@ -104,6 +106,7 @@ function getWebpackConfig(){
                 removeAttributeQuotes: true // 移除属性的引号
               }
             }),
+            new MiniCssExtractPlugin(),
             new OptimizeCSSAssetsPlugin(),
             new CleanWebpackPlugin(),
           ].filter((item)=>item!==null),

@@ -1,0 +1,8 @@
+@keyframes w-loading {
+  0% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

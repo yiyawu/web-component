@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
-import Test from './test'
+import Test from './loadingExample/spinnerExample'
 ReactDom.render(
   <>
     <Test/>

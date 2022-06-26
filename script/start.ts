@@ -81,11 +81,6 @@ function startServer(host: string, port: number) {
   // @ts-ignore
   const compiler = webpack(getWebpackConfig())
 
-  compiler.hooks.invalid.tap('invalid', () => {
-    clearConsole()
-    console.log('Compiling...')
-  })
-
   compiler.hooks.done.tap('done', stats => {
     if (errorDispose(stats) === STATUS.SUCCESS){
       console.log(chalk.green('编译通过!!!', `请访问:http://localhost:${port}`))

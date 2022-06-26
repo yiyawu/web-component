@@ -1,0 +1,78 @@
+﻿@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* S css格式化 */
+body{-webkit-overflow-scrolling:touch;overscroll-behavior-y: contain}
+html{font-size: 17px;font-family: Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","微软雅黑",STHeiti,"华文细黑",sans-serif}
+div,ul,body{margin: 0;padding: 0}
+a{text-decoration: none;color: #000000}
+a:hover{ -webkit-tap-highlight-color: transparent }
+ul li{list-style: none}
+input,button,a,textarea {outline:0 none !important}
+textarea,input{-webkit-user-select: auto;border:none}
+button{border: 0px;outline:none}
+button:focus{outline:none}
+img{vertical-align: middle}
+table {border-collapse: collapse}
+div,li{box-sizing: border-box}
+/* E css格式化 */
+
+/* flex布局 */
+.w-fx{display: flex;align-items: center}
+.w-j-c{justify-content: center}
+.w-j-sb{justify-content: space-between}
+.w-fx-col{flex-direction: column}
+
+.w-hide{overflow: hidden}
+
+/* 下边框 */
+.w-border::before {
+  content: ' ';
+  left: 0;
+  top: 0;
+  height: 200%;
+  width: 200%;
+  transform: scale(0.5, 0.5);
+  transform-origin: top left;
+  border: 1px solid;
+  pointer-events: none;
+  box-sizing: border-box;
+  border-color: transparent transparent #e4e4e4 transparent
+}
+
+.w-fd{position: fixed!important; top: 0; left: 0; right: 0; bottom: 0;z-index: 9;}
+.w-rel,.w-border {position: relative}
+.w-abs,.w-border::before {position: absolute}
+.w-bg-fff { background: #fff}
+.w-c-fff {color: #fff}
+
+/* 输入框提示颜色 */
+.w-prompt-c::-webkit-input-placeholder { color: #9CA3A8}
+/* iosclick事件去除颜色 */
+.w-ios-ne {-webkit-tap-highlight-color: transparent}
+/* 文字不能选择 */
+.w-ne-select{user-select: none}
+
+/* 点击穿透 */
+.w-ck-ne {pointer-events: none}
+/* 不能点击穿透 */
+.w-ck-ao {pointer-events: auto}
+
+/* 强制换行 */
+.w-warp {text-overflow: ellipsis;word-break:break-all}
+
+/* 模糊 */
+.w-filter {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px)
+}
+
+/* 显示灰色 */
+.w-gray { filter: grayscale(100%)}
+
+.w-circle {border-radius: 50%}
+
+.w-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}

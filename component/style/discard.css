@@ -1,0 +1,30 @@
+﻿@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss';
+/* flex布局 */
+.w-flex{display: flex;align-items: center}
+.w-flex-col{flex-direction: column}
+.w-hidden{overflow: hidden}
+.w-fixed-full{top: 0; left: 0; right: 0; bottom: 0;z-index: 9;}
+.w-relative {position: relative}
+.w-absolute {position: absolute}
+.w-background-white { background: #fff}
+.w-color-white {color: #fff}
+/* 输入框提示颜色 */
+.w-input-tip-color::-webkit-input-placeholder { color: #9CA3A8}
+/* iosclick事件去除颜色 */
+.w-click-color-none {-webkit-tap-highlight-color: transparent}
+/* 文字不能选择 */
+.w-selecd-none{user-select: none}
+.w-fixed,.w-fixed-full {position: fixed;}
+/* 点击穿透 */
+.w-click-none {pointer-events: none}
+/* 不能点击穿透 */
+.w-click-auto {pointer-events: auto}
+/* 强制换行 */
+.w-no-warp {text-overflow: ellipsis;word-break:break-all}
+/* 模糊 */
+.w-backdrop-filter {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px)
+}
